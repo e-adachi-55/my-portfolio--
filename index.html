@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script
+src="https://code.jquery.com/jquery-2.2.4.min.js"
+integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div id="header">
+            <nav>
+            <ul id="navi" class="navi">
+                <li><a href="#">about</a></li>
+                <li><a href="#">skills</a></li>
+                <li><a href="#">works</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            </nav>
+            
+            <!-- ボタン部分ここを後で追加するだけ-->
+            <div class="nav_btn" id="nav_btn">
+                <span class="hamburger_line hamburger_line1"></span>
+                <span class="hamburger_line hamburger_line2"></span>
+                <span class="hamburger_line hamburger_line3"></span>
+            </div>
+            <div class="nav_bg" id="nav_bg"></div>
+            <!-- /ボタン部分ここを後で追加するだけ-->
+            
+        </div>
+    </header>
+    <main>
+        <div class="main_visual">
+            <div class="main_img">
+                <img src="img/main.jpg" alt="">
+            </div>
+            <div class="main_text">
+                <p>my portfolio</p>
+            </div>
+        </div>
+    </main>
+    
+ 
+<script>
+   (function ($) {
+
+
+  /* ------------------------------- */
+
+})(jQuery);
+
+
+  /* SP menu */
+  function toggleNav() {
+  var body = document.body;
+  var hamburger = document.getElementById('nav_btn');
+  var blackBg = document.getElementById('nav_bg');
+
+  hamburger.addEventListener('click', function() {
+    body.classList.toggle('nav_open'); //メニュークリックでnav-openというクラスがbodyに付与
+  });
+  blackBg.addEventListener('click', function() {
+    body.classList.remove('nav_open'); //もう一度クリックで解除
+  });
+}
+toggleNav();
+</script>
+</body>
+</html>
