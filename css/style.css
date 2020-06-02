@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -84,6 +85,42 @@ nav {
     }
   }
 
+.main_visual {
+    margin-bottom: 150px;
+}
+
+section {
+    max-width: 1030px;
+    margin: 0 auto 100px;
+}
+
+.contents_title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about_wrapper {
+    display: flex;
+} 
+
+.about_img {
+    width: 50%;
+    text-align: center;
+}
+
+.about_img img{
+    border-radius: 50%;
+    width: 400px;
+}    
+
+.about_text {
+    width: 50%;
+}
+
+.about_text p {
+    text-align: center;
+}
 /*ハンバーガーボタン*/
 @media screen and (max-width: 768px) {
     #header #navi {
