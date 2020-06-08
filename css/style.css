@@ -122,14 +122,29 @@ section {
     text-align: center;
 }
 
+.skills {
+    width: 100%;
+}
+
 .skills_container {
     border: 3px solid #add8e64d;
-    width: 100%;
-    height: 500px;
+    height: auto;
+    padding: 50px;
 }
 
 .skills_card {
     display: flex;
+    flex-wrap: wrap;
+}
+
+li .skill {
+    width: calc(100% / 4);
+    text-align: center;
+}
+
+.skill img{
+    width: 150px;
+    margin: 30px;
 }
 
 
