@@ -147,6 +147,34 @@ li .skill {
     margin: 30px;
 }
 
+.works_container {
+    width: 100%;
+}
+
+.works_container ul {
+    padding: 0;
+}
+
+.works_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.works_item {
+    width: calc((100% / 2) - 15px);
+}
+
+.works_card li {
+    margin-bottom: 60px;
+    background: #FFF;
+    border-radius: 3px;
+    box-shadow: 0px 3px 6px 0px #9E9E9E;
+}
+
+.works_item img {
+    width: 100%;
+}
 
 /*ハンバーガーボタン*/
 @media screen and (max-width: 768px) {
