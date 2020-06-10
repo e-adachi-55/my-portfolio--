@@ -16,21 +16,21 @@ crossorigin="anonymous"></script>
         <div id="header">
             <nav>
             <ul id="navi" class="navi">
+                <li><a href="#">home</a></li>
                 <li><a href="#about">about</a></li>
                 <li><a href="#skills">skills</a></li>
                 <li><a href="#works">works</a></li>
-                <li><a href="#">contact</a></li>
             </ul>
             </nav>
             
-            <!-- ボタン部分ここを後で追加するだけ-->
+            <!-- ボタン部分-->
             <div class="nav_btn" id="nav_btn">
                 <span class="hamburger_line hamburger_line1"></span>
                 <span class="hamburger_line hamburger_line2"></span>
                 <span class="hamburger_line hamburger_line3"></span>
             </div>
             <div class="nav_bg" id="nav_bg"></div>
-            <!-- /ボタン部分ここを後で追加するだけ-->
+            <!-- /ボタン部分-->
             
         </div>
     </header>
@@ -48,7 +48,9 @@ crossorigin="anonymous"></script>
                     <img src="./img/about.jpg" alt="">
                 </div>
                 <div class="about_text">
-                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    <h2>Emiko Adachi</h2>
+                    <p>食べることと喋ることと寝ることとポケモンが好きです<br>
+                    アパレルのECの運営を担当しています</p>
                 </div>
             </div>
         </section>
@@ -56,13 +58,34 @@ crossorigin="anonymous"></script>
             <h1 class="contents_title">skills</h1>
             <div class="skills_container">
                 <ul class="skills_card">
-                    <li class="skill"><img src="img/icons8-html-5-48.png" alt=""></li>
-                    <li class="skill"><img src="img/icons8-css3-48.png" alt=""></li>
-                    <li class="skill"><img src="img/icons8-javascript-48.png" alt=""></li>
-                    <li class="skill"><img src="img/icons8-vue-js-48.png" alt=""></li>
-                    <li class="skill"><img src="img/icons8-php-ロゴ-30.png" alt=""></li>
-                    <li class="skill"><img src="img/icons8-adobe-photoshop-48.png" alt=""></li>
-                    <li class="skill"><img src="img/icons8-adobe-xd-48.png" alt=""></li>
+                    <li class="skill">
+                        <img src="img/icons8-html-5-48.png" alt="">
+                        <p>HTML5</p>
+                    </li>
+                    <li class="skill">
+                        <img src="img/icons8-css3-48.png" alt="">
+                        <p>CSS3</p>
+                    </li>
+                    <li class="skill">
+                        <img src="img/icons8-javascript-48.png" alt="">
+                        <p>JavaScript</p>
+                    </li>
+                    <li class="skill">
+                        <img src="img/icons8-vue-js-48.png" alt="">
+                        <p>Vue.js</p>
+                    </li>
+                    <li class="skill">
+                        <img src="img/icons8-php-ロゴ-30.png" alt="">
+                        <p>PHP</p>
+                    </li>
+                    <li class="skill">
+                        <img src="img/icons8-adobe-photoshop-48.png" alt="">
+                        <p>photoshop</p>
+                    </li>
+                    <li class="skill">
+                        <img src="img/icons8-adobe-xd-48.png" alt="">
+                        <p>adobe XD</p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -70,31 +93,59 @@ crossorigin="anonymous"></script>
             <h1 class="contents_title">works</h1>
                 <div class="works_container">
                     <ul class="works_card">
-                        <li class="works_item">
+                        <li class="works_item" id ="openModal">
                             <img src="img/works_04.png" alt="">
-                            <h2>ポートフォリオ</h2>
-                            <p>HTML/CSS</p>
+                            <div class="works_wrapper">
+                                <h2 class="works_title">ポートフォリオ</h2>
+                                <p class="html_css">HTML/CSS</p>
+                                <p class="jQuery">jQuery</p>
+                            </div>
                         </li>
+                        <!-- モーダルエリアここから -->
+                        <section id="modalArea" class="modalArea">
+                        <div id="modalBg" class="modalBg"></div>
+                        <div class="modalWrapper">
+                            <div class="modalContents">
+                                <img src="img/works_04.png" alt="">
+                                <h2>ポートフォリオ</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            </div>
+                            <div id="closeModal" class="closeModal">
+                            ×
+                            </div>
+                        </div>
+                        </section>
+                        <!-- モーダルエリアここまで -->
                         <li class="works_item">
                             <img src="img/works_03.png" alt="">
-                            <h2>架空LPコーディング</h2>
-                            <p>HTML/CSS</p>
+                            <div class="works_wrapper">
+                                <h2 class="works_title">架空LPコーディング</h2>
+                                <p class="html_css">HTML/CSS</p>
+                                <p class="jQuery">jQuery</p>
+                            </div>
                         </li>
                         <li class="works_item">
                             <img src="img/works_02.png" alt="">
-                            <h2>架空LPコーディング</h2>
-                            <p>HTML/CSS</p>
+                            <div class="works_wrapper">
+                                <h2 class="works_title">架空LPコーディング</h2>
+                                <p class="html_css">HTML/CSS</p>
+                                <p class="jQuery">jQuery</p>
+                            </div>
                         </li>
                         <li class="works_item">
                             <img src="img/works_01.png" alt="">
-                            <h2>架空LPコーディング</h2>
-                            <p>HTML/CSS</p>
+                            <div class="works_wrapper">
+                                <h2 class="works_title">架空LPコーディング</h2>
+                                <p class="html_css">HTML/CSS</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
         </section>
     </main>
-    
+    <footer>
+        <p>&copy; 2020 emiko adachi</p>
+    </footer>
  
 <script>
    (function ($) {
@@ -119,6 +170,15 @@ crossorigin="anonymous"></script>
   });
 }
 toggleNav();
+
+$(function () {
+  $('#openModal').click(function(){
+      $('#modalArea').fadeIn();
+  });
+  $('#closeModal , #modalBg').click(function(){
+    $('#modalArea').fadeOut();
+  });
+});
 </script>
 </body>
 </html>
