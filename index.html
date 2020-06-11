@@ -6,10 +6,7 @@
     <title>my portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
-    <script
-src="https://code.jquery.com/jquery-2.2.4.min.js"
-integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -93,7 +90,7 @@ crossorigin="anonymous"></script>
             <h1 class="contents_title">works</h1>
                 <div class="works_container">
                     <ul class="works_card">
-                        <li class="works_item" id ="openModal">
+                        <li class="works_item" id="openmodal_4">
                             <img src="img/works_04.png" alt="">
                             <div class="works_wrapper">
                                 <h2 class="works_title">ポートフォリオ</h2>
@@ -102,21 +99,50 @@ crossorigin="anonymous"></script>
                             </div>
                         </li>
                         <!-- モーダルエリアここから -->
-                        <section id="modalArea" class="modalArea">
-                        <div id="modalBg" class="modalBg"></div>
+                        <section id="modalArea_4" class="modalArea">
+                        <div id="modalBg_4" class="modalBg"></div>
                         <div class="modalWrapper">
                             <div class="modalContents">
                                 <img src="img/works_04.png" alt="">
                                 <h2>ポートフォリオ</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                <table>
+                                    <tr class="modal_list">
+                                        <td>ポイント</td>
+                                        <td>
+                                            <ul>
+                                                <li>レスポンシブ対応あり(PC、SP)</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>サイトURL</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>GitHub</td>
+                                        <td><a href="https://github.com/e-adachi-55/my-portfolio" target="_blank">https://github.com/e-adachi-55/my-portfolio</a></td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>担当箇所</td>
+                                        <td>コーディングのみ</td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>言語・ツール</td>
+                                        <td>HTML / CSS / jQuery</td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>制作時間</td>
+                                        <td>8時間</td>
+                                    </tr>
+                                </table>
                             </div>
-                            <div id="closeModal" class="closeModal">
+                            <div id="closeModal_4" class="closeModal">
                             ×
                             </div>
                         </div>
                         </section>
                         <!-- モーダルエリアここまで -->
-                        <li class="works_item">
+                        <li class="works_item" id="openmodal_3">
                             <img src="img/works_03.png" alt="">
                             <div class="works_wrapper">
                                 <h2 class="works_title">架空LPコーディング</h2>
@@ -124,7 +150,53 @@ crossorigin="anonymous"></script>
                                 <p class="jQuery">jQuery</p>
                             </div>
                         </li>
-                        <li class="works_item">
+                        <!-- モーダルエリアここから -->
+                        <section id="modalArea_3" class="modalArea">
+                        <div id="modalBg_3" class="modalBg"></div>
+                        <div class="modalWrapper">
+                            <div class="modalContents">
+                                <img src="img/works_03.png" alt="">
+                                <h2>架空LPコーディング</h2>
+                                <table>
+                                    <tr class="modal_list">
+                                        <td>ポイント</td>
+                                        <td>
+                                            <ul>
+                                                <li>レスポンシブ対応あり(PC、SP)</li>
+                                                <li>jQueryを使用したスライダーの実装</li>
+                                                <li>パラメータを使った動的ページ作成</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>サイトURL</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>GitHub</td>
+                                        <td><a href="https://github.com/e-adachi-55/Learning-history3" target="_blank">https://github.com/e-adachi-55/Learning-history3</a></td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>担当箇所</td>
+                                        <td>コーディングのみ</td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>言語・ツール</td>
+                                        <td>HTML / CSS / jQuery</td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>制作時間</td>
+                                        <td>16時間</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="closeModal_3" class="closeModal">
+                            ×
+                            </div>
+                        </div>
+                        </section>
+                        <!-- モーダルエリアここまで -->
+                        <li class="works_item"  id="openmodal_2">
                             <img src="img/works_02.png" alt="">
                             <div class="works_wrapper">
                                 <h2 class="works_title">架空LPコーディング</h2>
@@ -132,13 +204,102 @@ crossorigin="anonymous"></script>
                                 <p class="jQuery">jQuery</p>
                             </div>
                         </li>
-                        <li class="works_item">
+                        <!-- モーダルエリアここから -->
+                        <section id="modalArea_2" class="modalArea">
+                        <div id="modalBg_2" class="modalBg"></div>
+                        <div class="modalWrapper">
+                            <div class="modalContents">
+                                <img src="img/works_02.png" alt="">
+                                <h2>架空LPコーディング</h2>
+                                <table>
+                                    <tr class="modal_list">
+                                        <td>ポイント</td>
+                                        <td>
+                                            <ul>
+                                                <li>レスポンシブ対応あり(PC、SP)</li>
+                                                <li>模写コーディング</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>サイトURL</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>GitHub</td>
+                                        <td><a href="https://github.com/e-adachi-55/Learning-history2" target="_blank">https://github.com/e-adachi-55/Learning-history2</a></td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>担当箇所</td>
+                                        <td>コーディングのみ</td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>言語・ツール</td>
+                                        <td>HTML / CSS / jQuery</td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>制作時間</td>
+                                        <td>12時間</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="closeModal_2" class="closeModal">
+                            ×
+                            </div>
+                        </div>
+                        </section>
+                        <!-- モーダルエリアここまで -->
+                        <li class="works_item"  id="openmodal_1">
                             <img src="img/works_01.png" alt="">
                             <div class="works_wrapper">
                                 <h2 class="works_title">架空LPコーディング</h2>
                                 <p class="html_css">HTML/CSS</p>
                             </div>
                         </li>
+                        <!-- モーダルエリアここから -->
+                        <section id="modalArea_1" class="modalArea">
+                        <div id="modalBg_1" class="modalBg"></div>
+                        <div class="modalWrapper">
+                            <div class="modalContents">
+                                <img src="img/works_01.png" alt="">
+                                <h2>架空LPコーディング</h2>
+                                <table>
+                                    <tr class="modal_list">
+                                        <td>ポイント</td>
+                                        <td>
+                                            <ul>
+                                                <li>模写コーディング</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>サイトURL</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>GitHub</td>
+                                        <td><a href="https://github.com/e-adachi-55/Learning-history1" target="_blank">https://github.com/e-adachi-55/Learning-history1</a></td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>担当箇所</td>
+                                        <td>コーディングのみ</td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>言語・ツール</td>
+                                        <td>HTML / CSS </td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>制作時間</td>
+                                        <td>5時間</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="closeModal_1" class="closeModal">
+                            ×
+                            </div>
+                        </div>
+                        </section>
+                        <!-- モーダルエリアここまで -->
                     </ul>
                 </div>
         </section>
@@ -148,37 +309,60 @@ crossorigin="anonymous"></script>
     </footer>
  
 <script>
-   (function ($) {
-
-
-  /* ------------------------------- */
-
-})(jQuery);
-
 
   /* SP menu */
   function toggleNav() {
-  var body = document.body;
-  var hamburger = document.getElementById('nav_btn');
-  var blackBg = document.getElementById('nav_bg');
+    var body = document.body;
+    var hamburger = document.getElementById('nav_btn');
+    var blackBg = document.getElementById('nav_bg');
 
-  hamburger.addEventListener('click', function() {
-    body.classList.toggle('nav_open'); //メニュークリックでnav-openというクラスがbodyに付与
-  });
-  blackBg.addEventListener('click', function() {
-    body.classList.remove('nav_open'); //もう一度クリックで解除
-  });
-}
-toggleNav();
+    hamburger.addEventListener('click', function() {
+        body.classList.toggle('nav_open'); //メニュークリックでnav-openというクラスがbodyに付与
+    });
+    blackBg.addEventListener('click', function() {
+        body.classList.remove('nav_open'); //もう一度クリックで解除
+    });
+  }
+    toggleNav();
 
 $(function () {
-  $('#openModal').click(function(){
-      $('#modalArea').fadeIn();
+  $('#openmodal_4').click(function(){
+      $('#modalArea_4').fadeIn();
   });
-  $('#closeModal , #modalBg').click(function(){
-    $('#modalArea').fadeOut();
+  $('#closeModal_4 , #modalBg_4').click(function(){
+    $('#modalArea_4').fadeOut();
   });
 });
+
+$(function () {
+    $('#openmodal_3').click(function(){
+        $('#modalArea_3').fadeIn();
+    });
+    $('#closeModal_3 , #modalBg_3').click(function(){
+        $('#modalArea_3').fadeOut();
+    });
+});
+
+$(function () {
+    $('#openmodal_2').click(function(){
+        $('#modalArea_2').fadeIn();
+    });
+    $('#closeModal_2 , #modalBg_2').click(function(){
+        $('#modalArea_2').fadeOut();
+    });
+});
+
+$(function () {
+    $('#openmodal_1').click(function(){
+        $('#modalArea_1').fadeIn();
+    });
+    $('#closeModal_1 , #modalBg_1').click(function(){
+        $('#modalArea_1').fadeOut();
+    });
+});
+
+
+
 </script>
 </body>
 </html>
