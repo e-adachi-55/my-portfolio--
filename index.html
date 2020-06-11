@@ -9,11 +9,11 @@
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <div id="header">
             <nav>
             <ul id="navi" class="navi">
-                <li><a href="#">home</a></li>
+                <li><a href="#home">home</a></li>
                 <li><a href="#about">about</a></li>
                 <li><a href="#skills">skills</a></li>
                 <li><a href="#works">works</a></li>
@@ -321,6 +321,9 @@
     });
     blackBg.addEventListener('click', function() {
         body.classList.remove('nav_open'); //もう一度クリックで解除
+    });
+    $('a[href^="#"]').on('click', function() {
+      blackBg.click(); // .menuをクリックした時と同じ処理
     });
   }
     toggleNav();
