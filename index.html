@@ -9,7 +9,7 @@
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-    <header class="header" id="home">
+    <header class="header">
         <div id="header">
             <nav>
             <ul id="navi" class="navi">
@@ -32,7 +32,7 @@
         </div>
     </header>
     <main>
-        <div class="main_visual">
+        <div class="main_visual"  id="home">
             <div class="main_img"></div>
             <div class="main_text">
                 <p>my portfolio</p>
@@ -90,6 +90,59 @@
             <h1 class="contents_title">works</h1>
                 <div class="works_container">
                     <ul class="works_card">
+                        <li class="works_item" id="openmodal_5">
+                            <img src="img/works_05.png" alt="">
+                            <div class="works_wrapper">
+                                <h2 class="works_title">架空LPコーディング</h2>
+                                <p class="html_css">HTML/CSS</p>
+                                <p class="jQuery">jQuery</p>
+                            </div>
+                        </li>
+                        <!-- モーダルエリアここから -->
+                        <section id="modalArea_5" class="modalArea">
+                        <div id="modalBg_5" class="modalBg"></div>
+                        <div class="modalWrapper">
+                            <div class="modalContents">
+                                <img src="img/works_05.png" alt="">
+                                <h2>架空LPコーディング</h2>
+                                <table>
+                                    <tr class="modal_list">
+                                        <td>ポイント</td>
+                                        <td>
+                                            <ul>
+                                                <li>レスポンシブ対応あり(PC、SP)</li>
+                                                <li>XDカンプからのコーディング</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>サイトURL</td>
+                                        <td><a href="works/05/index.html" target="_blank">https://e-adachi/works/05.com</a></td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>GitHub</td>
+                                        <td><a href="https://github.com/e-adachi-55/crestadesign-cording1" target="_blank">https://github.com/e-adachi-55/crestadesign-cording1</a></td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>担当箇所</td>
+                                        <td>コーディングのみ</td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>言語・ツール</td>
+                                        <td>HTML / CSS / jQuery / adobe XD</td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>制作時間</td>
+                                        <td>14時間</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="closeModal_5" class="closeModal">
+                            ×
+                            </div>
+                        </div>
+                        </section>
+                        <!-- モーダルエリアここまで -->
                         <li class="works_item" id="openmodal_4">
                             <img src="img/works_04.png" alt="">
                             <div class="works_wrapper">
@@ -116,7 +169,7 @@
                                     </tr>
                                     <tr class="modal_list">
                                         <td>サイトURL</td>
-                                        <td></td>
+                                        <td><a href="index.html" target="_blank">https://e-adachi.com</a></td>
                                     </tr>
                                     <tr class="modal_list">
                                         <td>GitHub</td>
@@ -128,7 +181,7 @@
                                     </tr>
                                     <tr class="modal_list">
                                         <td>言語・ツール</td>
-                                        <td>HTML / CSS / jQuery</td>
+                                        <td>HTML / CSS / jQuery / adobe XD</td>
                                     </tr>
                                     <tr class="modal_list">
                                         <td>制作時間</td>
@@ -170,7 +223,7 @@
                                     </tr>
                                     <tr class="modal_list">
                                         <td>サイトURL</td>
-                                        <td></td>
+                                        <td><a href="works/03/index.html" target="_blank">https://e-adachi/works/03.com</a></td>
                                     </tr>
                                     <tr class="modal_list">
                                         <td>GitHub</td>
@@ -223,7 +276,7 @@
                                     </tr>
                                     <tr class="modal_list">
                                         <td>サイトURL</td>
-                                        <td></td>
+                                        <td><a href="works/02/index.html" target="_blank">https://e-adachi/works/02.com</a></td>
                                     </tr>
                                     <tr class="modal_list">
                                         <td>GitHub</td>
@@ -272,10 +325,10 @@
                                             </ul>
                                         </td>
                                     </tr>
-                                    <tr class="modal_list">
+                                   <!-- <tr class="modal_list">
                                         <td>サイトURL</td>
-                                        <td></td>
-                                    </tr>
+                                        <td><a href="works/01/index.html" target="_blank">https://e-adachi/works/01.com</a></td>
+                                    </tr> -->
                                     <tr class="modal_list">
                                         <td>GitHub</td>
                                         <td><a href="https://github.com/e-adachi-55/Learning-history1" target="_blank">https://github.com/e-adachi-55/Learning-history1</a></td>
@@ -327,6 +380,15 @@
     });
   }
     toggleNav();
+
+$(function () {
+  $('#openmodal_5').click(function(){
+      $('#modalArea_5').fadeIn();
+  });
+  $('#closeModal_5 , #modalBg_5').click(function(){
+    $('#modalArea_5').fadeOut();
+  });
+});    
 
 $(function () {
   $('#openmodal_4').click(function(){
