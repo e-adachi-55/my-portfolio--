@@ -90,6 +90,61 @@
             <h1 class="contents_title">works</h1>
                 <div class="works_container">
                     <ul class="works_card">
+                        <li class="works_item" id="openmodal_6">
+                            <img src="img/works_06.png" alt="">
+                            <div class="works_wrapper">
+                                <h2 class="works_title">架空ECサイト</h2>
+                                <p class="html_css">HTML/CSS</p>
+                                <p class="jQuery">jQuery</p>
+                            </div>
+                        </li>
+                        <!-- モーダルエリアここから -->
+                        <section id="modalArea_6" class="modalArea">
+                        <div id="modalBg_6" class="modalBg"></div>
+                        <div class="modalWrapper">
+                            <div class="modalContents">
+                                <img src="img/works_06.png" alt="">
+                                <h2>架空ECサイト</h2>
+                                <table>
+                                    <tr class="modal_list">
+                                        <td>ポイント</td>
+                                        <td>
+                                            <ul>
+                                                <li>レスポンシブ対応あり(PC、SP)</li>
+                                                <li>プラグインを使用したスライダーの実装</li>
+                                                <li>画像拡大機能</li>
+                                                <li>お気に入り追加やカートに入れる機能実装</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>サイトURL</td>
+                                        <td><a href="works/06/index.html" target="_blank">https://e-adachi/works/06.com</a></td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>GitHub</td>
+                                        <td><a href="https://github.com/e-adachi-55/ec" target="_blank">https://github.com/e-adachi-55/ec</a></td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>担当箇所</td>
+                                        <td>コーディングのみ</td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>言語・ツール</td>
+                                        <td>HTML / CSS / jQuery</td>
+                                    </tr>
+                                    <tr class="modal_list">
+                                        <td>制作時間</td>
+                                        <td>35時間</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="closeModal_6" class="closeModal">
+                            ×
+                            </div>
+                        </div>
+                        </section>
+                        <!-- モーダルエリアここまで -->
                         <li class="works_item" id="openmodal_5">
                             <img src="img/works_05.png" alt="">
                             <div class="works_wrapper">
@@ -380,6 +435,15 @@
     });
   }
     toggleNav();
+
+$(function () {
+  $('#openmodal_6').click(function(){
+      $('#modalArea_6').fadeIn();
+  });
+  $('#closeModal_6 , #modalBg_6').click(function(){
+    $('#modalArea_6').fadeOut();
+  });
+});     
 
 $(function () {
   $('#openmodal_5').click(function(){
